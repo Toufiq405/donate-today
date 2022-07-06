@@ -4,13 +4,17 @@
 
     1. Common css
     2. Header Section
-    3. 
-    4. 
+    3. Donate Option Section
+    4. Donate Plan Section
+    5. About us Section
+    6. Contact Section
+    7. Footer Section
+
 =================================*/
 /*=================================
     1. Common Css
 =================================*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -25,15 +29,31 @@ h1,h2,h3,h4,h5,h6 {
   width: 1124px;
   margin: auto;
 }
-/* Reuseable component */
+/* Reusable Component */
 .link_btn {
   text-decoration: none;
   color: #fff;
   background: #FF5959;
   padding: 15px 25px;
   border-radius: 5px;
+  display: inline-block;
 }
-
+.section_heading {
+  text-align: center;
+}
+.section_title {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.section_discription {
+  font-size: 18px;
+  color: #707070;
+  margin-bottom: 30px;
+}
+section,
+footer {
+  padding: 65px 0;
+}
 /*=================================
     2. Header Section
 =================================*/
@@ -52,13 +72,146 @@ h1,h2,h3,h4,h5,h6 {
   transform: translate(-50%,-50%);
 }
 .header_title,
-.header_discription {
+.header_discription,
+.plan_text_contain p,
+.plan_text_contain h4,
+.custom_donate_options  input {
   margin-bottom: 30px;
 }
 .header_title {
   font-size: 65px;
   font-weight: 700;
+  text-align: center;
 }
 .header_discription {
   font-size: 18px;
+  text-align: center;
+}
+/*=================================
+    3. Donate Option Section
+=================================*/
+
+.donate_options_container {
+  width: 826px;
+  text-align: center;
+  margin: auto;
+}
+.donate_options_boxes {
+  display: flex;
+}
+.donate_options_item {
+  width: 136px;
+  margin: auto;
+  background: #FAFAFA;
+  padding: 55px 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.different_bg1 {
+  background: #FFEEEE;
+  color: #FF5959;
+  border: 2px solid #FF5959;
+}
+#different_bg2{
+  background-color: rgba(255, 89, 89, 0.10);
+}
+#different_bg3 {
+  background-color: #FFF4D6;
+}
+.custom_donate_options  input{
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #707070;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  padding: 10px;
+}
+input:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #FF5959;
+    transition: all 0.5s;
+    color: #FF5959;
+}
+/*=================================
+    4. Donate Plan Section
+=================================*/
+.donate_plan_boxes {
+  display: flex;
+}
+.donate_plan_item {
+  width: 360px;
+  padding: 20px;
+  background: rgba(79, 157, 166, 0.1);
+  margin: 0 15px;
+}
+.plan_item_icon {
+  margin: 50px 0px 30px 0px;
+}
+.plan_text_contain {
+  font-family: 'Poppins', sans-serif;
+}
+.plan_text_contain h4{
+  font-size: 24px;
+}
+.plan_text_contain p{
+  font-size: 16px;
+  color: #707070;
+}
+/*=================================
+    5. About us Section
+=================================*/
+.about_us {
+  background: linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)), url(img/donation10.jpg) no-repeat center / cover;
+}
+.about_us_paragraph {
+  width: 809px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.text_color_white {
+  color: #fff;
+}
+.color_red {
+  color: #FF5959;
+}
+/*=================================
+    6. Contact Section
+=================================*/
+.contact_medium_box {
+  background-color: #FFF4D6;
+  width: 809px;
+  margin: auto;
+  padding: 50px 0px;
+  text-align: center;
+}
+.contact_medium_form input {
+  padding: 17px;
+  background-color: #D9D9D9;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 400px;
+}
+.contact_medium_form input[type="email"]:focus-visible {
+  outline: none;
+  border: 2px solid #FF5959;
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #000;
+}
+/*=================================
+    7. Footer Section
+=================================*/
+footer {
+  background-color: #000;
+  text-align: center;
+  color: #D9DBE1;
+}
+footer h5 {
+  font-family: 'Lobster', cursive;
+  color: #FF5959;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
